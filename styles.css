@@ -29,12 +29,18 @@ nav{
 
 nav > .header{
     display: flex;
-    margin-left: 12px;
+    margin-left: 16px;
 }
 
 .header > svg{
     width: 40px;
     margin-right: 16px;
+}
+
+.header > a{
+    font-size: 1.8rem;
+    margin: 20px 0;
+    margin-right: 80px;
 }
 
 nav ul{
@@ -45,11 +51,12 @@ nav ul{
 nav li{
     display: flex;
     list-style: none;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 nav li svg{
-    width: 18px;
+    width: 20px;
     margin-right: 20px;
 }
 
@@ -163,6 +170,52 @@ main > .mainpart{
     display: flex;
 }
 
-main > section > h1{
+.mainpart > section{
+    flex: 2;
+}
+
+.mainpart > section > h1{
     font-size: 1.5rem;
+}
+
+.mainpart > section > .projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin-right: 30px;
+}
+
+.projects .card{
+    background-color: var(--primary-bg);
+    border-radius: 10px;
+    border-left:  5px solid #FF407D;
+}
+
+.card1{
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.card2{
+    grid-area: 1 / 3 / 2 / 5;
+}
+
+.card3{
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.card4{
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+.card5{
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.card6{
+    grid-area: 3 / 3 / 4 / 5;
+}
+
+.mainpart > aside{
+    flex: 1;
 }
