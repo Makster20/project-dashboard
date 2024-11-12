@@ -1,0 +1,168 @@
+
+
+:root{
+    --primary: #1B3C73;
+    --secondary: #FF407D;
+    --primary-bg: #FFFFFF;
+    --secondary-bg: #e4e4e4;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: var(--secondary-bg);
+    font-family: 'roboto', 'Arial';
+
+}
+
+svg{
+    width: 30px;
+}
+
+nav{
+    background-color: var(--primary);
+    flex-grow: 1;
+    color: white;
+    padding-right: 24px;
+}
+
+nav > .header{
+    display: flex;
+    margin-left: 12px;
+}
+
+.header > svg{
+    width: 40px;
+    margin-right: 16px;
+}
+
+nav ul{
+    padding: 0;
+    padding-left: 30px;
+}
+
+nav li{
+    display: flex;
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+nav li svg{
+    width: 18px;
+    margin-right: 20px;
+}
+
+nav .main{
+    margin-bottom: 40px;
+}
+
+main{
+    flex-grow: 3;
+}
+
+main header{
+    background-color: var(--primary-bg);
+    box-shadow: 3px 5px 4px #bfbfbf ;
+}
+
+main > header > .navigation{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+header > .navigation > .search{
+    display: flex;
+    flex: 5;
+    align-items: center;
+} 
+
+header > .navigation > .profile{
+    display: flex;
+    flex: 3;
+    justify-content: end;
+    align-items: center;
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: 700;
+} 
+
+.navigation > .profile > img{
+    margin: 0 30px;
+}
+
+header > .navigation svg{
+    width: 30px;
+}
+
+header > .navigation input{
+    margin-left: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: var(--secondary-bg);
+    height: 32px;
+    width: 90%;
+}
+
+header > .navigation img{
+    width: 50px;
+    border-radius: 30px;
+}
+
+header > .profile{
+    display: flex;
+
+}
+
+header > .profile > img{
+    transform: scale(0.7);
+    border-radius: 100%;
+}
+
+header > .profile > .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name > span{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.name > h1{
+    margin: 0;
+    margin-top: 4px;
+}
+
+header > .profile > .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.buttons button{
+    border: none;
+    background-color: var(--secondary);
+    color: white;
+    display: inline;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 10px 25px;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+
+main > .mainpart{
+    margin-left: 24px;
+    display: flex;
+}
+
+main > section > h1{
+    font-size: 1.5rem;
+}
