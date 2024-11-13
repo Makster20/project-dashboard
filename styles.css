@@ -13,7 +13,11 @@ body{
     display: flex;
     background-color: var(--secondary-bg);
     font-family: 'roboto', 'Arial';
+    transition: 0.2;
+}
 
+h1, h2:hover{
+    font-weight: 600;
 }
 
 svg{
@@ -125,7 +129,10 @@ header > .profile{
 }
 
 header > .profile > img{
-    transform: scale(0.7);
+    margin: 10px 20px;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 65px;
     border-radius: 100%;
 }
 
@@ -133,16 +140,18 @@ header > .profile > .name{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .name > span{
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .name > h1{
     margin: 0;
     margin-top: 4px;
+    font-size: 1.5rem;
 }
 
 header > .profile > .buttons{
@@ -158,7 +167,7 @@ header > .profile > .buttons{
     background-color: var(--secondary);
     color: white;
     display: inline;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     padding: 10px 25px;
     margin: 0 20px;
@@ -175,7 +184,10 @@ main > .mainpart{
 }
 
 .mainpart > section > h1{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .mainpart > section > .projects{
@@ -189,7 +201,35 @@ main > .mainpart{
 .projects .card{
     background-color: var(--primary-bg);
     border-radius: 10px;
-    border-left:  5px solid #FF407D;
+    border-left:  10px solid #FF407D;
+}
+
+.projects .card h2{
+    font-size: 1.4rem;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.projects .card p{
+    color: rgb(0,0,0,0.7);
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 70%;
+    font-size: 1.1rem;
+}
+
+.projects .card .icons{
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+.icons svg{
+    margin-right: 25px;
+    margin-bottom: 30px;
 }
 
 .card1{
@@ -218,4 +258,62 @@ main > .mainpart{
 
 .mainpart > aside{
     flex: 1;
+}
+
+aside .announcements h1{
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.announcements .card{
+    background-color: var(--primary-bg);
+    padding: 10px 25px;
+    margin-right: 30px;
+    border-radius: 15px;
+}
+
+.announcements .card h2{
+    font-size: 1.1rem;
+}
+
+.announcements .card p{
+    font-size: 09.rem;
+    line-height: 20px;
+    color: rgb(0,0,0,0.7);
+}
+
+.trending h1{
+    font-size: 1.3rem
+}
+
+.trending .users{
+    background-color: var(--primary-bg);
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.users .user{
+    display: flex;
+    margin-top: 10px;
+}
+
+.user img{
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
+.user h2{
+    margin: 0;
+    margin-top: 10px;
+}
+
+.user span{
+    color: rgb(0,0,0,0.7);
 }
